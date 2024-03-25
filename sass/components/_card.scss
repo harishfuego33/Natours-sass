@@ -14,9 +14,9 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: 0.15);
     &--front {
-      // background-color: rebeccapurple;
       background-color: #fff;
     }
     &--back {
@@ -38,8 +38,8 @@
       &-3 {
         background-image: linear-gradient(
           to right bottom,
-          $color-tertiary-lighten,
-          $color-tertiary-darken
+          $color-territory-lighten,
+          $color-territory-darken
         );
       }
     }
@@ -56,7 +56,8 @@
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
-    border-radius: inherit;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     &--1 {
       background-image: linear-gradient(
           to right bottom,
@@ -76,10 +77,47 @@
     &--3 {
       background-image: linear-gradient(
           to right bottom,
-          $color-tertiary-lighten,
-          $color-tertiary-darken
+          $color-territory-lighten,
+          $color-territory-darken
         ),
         url(/img/nat-7.jpg);
+    }
+  }
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-direction-break: clone;
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-lighten, 0.85),
+        rgba($color-secondary-darken, 0.85)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-lighten, 0.85),
+        rgba($color-primary-darken, 0.85)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-territory-lighten, 0.85),
+        rgba($color-territory-darken, 0.85)
+      );
     }
   }
 }
