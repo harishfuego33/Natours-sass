@@ -144,13 +144,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 90%;
   }
 
   &__price-box {
     text-align: center;
     color: $color-white;
     margin-bottom: 8rem;
-    width: 90%;
   }
   &__price-only {
     font-size: 1.4rem;

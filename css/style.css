@@ -101,6 +101,12 @@ body {
 .u-margin-bottom {
   margin-bottom: 3rem; }
 
+.u-margin-top-8 {
+  margin-top: 8rem; }
+
+.u-margin-top-10 {
+  margin-top: 8rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -146,7 +152,7 @@ body {
 
 .sections-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
 
 .btn:link, .btn:visited {
@@ -171,6 +177,20 @@ body {
 .btn-white {
   background-color: #fff;
   color: #777; }
+  .btn-white::after {
+    background-color: #fff; }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
 
 .btn::after {
   content: "";
@@ -183,9 +203,6 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s; }
-
-.btn-white::after {
-  background-color: #fff; }
 
 .btn:hover::after {
   transform: scale(2);
@@ -338,12 +355,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    width: 90%; }
   .card__price-box {
     text-align: center;
     color: #fff;
-    margin-bottom: 8rem;
-    width: 90%; }
+    margin-bottom: 8rem; }
   .card__price-only {
     font-size: 1.4rem;
     text-transform: uppercase; }
