@@ -6,7 +6,6 @@
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
-@import "base/grid";
 
 @import "pages/home";
 
@@ -14,5 +13,8 @@
 @import "components/compostion";
 @import "components/feature-box";
 @import "components/card";
+@import "components/story";
+@import "components/bg-video";
 
 @import "layout/header";
+@import "layout/grid";

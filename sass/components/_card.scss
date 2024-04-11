@@ -131,9 +131,9 @@
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem;
-        color: $color-gray;
+        color: $color-grey;
         &:not(:last-child) {
-          border-bottom: 1px solid $color-gray-light-2;
+          border-bottom: 1px solid $color-grey-light-2;
         }
       }
     }
